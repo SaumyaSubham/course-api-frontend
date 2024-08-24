@@ -41,3 +41,15 @@ docker-compose up -d --build
 ```
 ### 5. Access the Application
 The frontend application will be running on **http://localhost:3001**.
+
+### 6. Pull Docker Image from Docker Hub
+
+If you prefer to run the Docker image directly from Docker Hub:
+
+```
+docker pull saumyasubham/course-api-frontend:latest
+docker run -p 3001:80 saumyasubham/course-api-frontend:latest
+```
+
+### 7. Contributions
+Fork this repository as contributions are always welcome!
