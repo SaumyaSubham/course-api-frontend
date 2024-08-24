@@ -1,0 +1,29 @@
+services:
+  backend:
+    build: ./course-api-backend
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./course-api-backend:/app
+    environment:
+      - DATABASE_URL=postgres://username:password@db:5432/coursedb
+    depends_on:
+      - db
+
+  frontend:
+    build: ./course-api-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./course-api-frontend:/app
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: course_management_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Family@04
+    ports:
+      - "5432:5432"
