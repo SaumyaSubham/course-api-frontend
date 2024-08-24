@@ -13,7 +13,7 @@ services:
   frontend:
     build: ./course-api-frontend
     ports:
-      - "3000:3000"
+      - "3000:80"
     volumes:
       - ./course-api-frontend:/app
     depends_on:
