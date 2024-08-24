@@ -42,7 +42,7 @@ docker-compose up -d --build
 ### 5. Access the Application
 The frontend application will be running on **http://localhost:3001**.
 
-### 6. Pull Docker Image from Docker Hub
+### Pull Docker Image from Docker Hub
 
 If you prefer to run the Docker image directly from Docker Hub:
 
@@ -51,5 +51,14 @@ docker pull saumyasubham/course-api-frontend:latest
 docker run -p 3001:80 saumyasubham/course-api-frontend:latest
 ```
 
-### 7. Contributions
-Fork this repository as contributions are always welcome!
+### CI/CD Workflow
+This repository uses GitHub Actions for CI/CD. Docker images are automatically built and pushed to DockerHub upon merging changes to the main branch.
+
+### GitHub Actions Workflow
+The .github/workflows/docker-image.yml file is set up to automate the building and pushing of Docker images. Here's what it does:
+
+- **Build the Docker Image:** The image is built based on the Dockerfile in the repository.
+- **Push to DockerHub:** The image is then pushed to your DockerHub repository.
+
+### Contributions
+Feel free to fork this repository as contributions are always welcome!
