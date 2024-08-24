@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: flex-start; /* Center content vertically */
+  min-height: 100vh;
+  margin: 0 auto; /* Center the entire app horizontally */
+  padding: 20px; /* Space around the content */
+}
+
+/* Header Styling */
+.App-header {
+  width: 100%; /* Make the header take full width */
+  max-width: 1200px; /* Limit the width of the content */
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Section Styling */
+.form-section, .list-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between form and list */
+  width: 100%; /* Take full width */
+  max-width: 1200px; /* Limit the width */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .form-section, .list-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,46 @@
+.course-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Slightly wider for better spacing */
+    max-width: 400px;
+    margin: 0 20px;
+    background-color: #ffffff; /* Background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600; /* Slightly bolder for clarity */
+    margin-bottom: 8px; /* Increased spacing */
+    display: block;
+    font-size: 14px; /* Font size for labels */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px; /* Increased padding for better user experience */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-submit {
+    padding: 12px 18px; /* Increased padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold; /* Bold for prominence */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
